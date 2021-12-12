@@ -1,25 +1,32 @@
+//
+//  ContentView.swift
+//  Reality Glasses 2020
+//
+//  Created by Vladimir Shevtsov on 06.11.2021.
+//
+
 import UIKit
 
 enum ShapeOption: String, RawRepresentable {
-    case addShape = "Select Basic Shape"
-    case addScene = "Select Scene File"
-    case togglePlane = "Enable/Disable Plane Visualization"
-    case undoLastShape = "Undo Last Shape"
-    case resetScene = "Reset Scene"
+    case addShape       = "Select Basic Shape"
+    case addScene       = "Select Scene File"
+    case togglePlane    = "Enable/Disable Plane Visualization"
+    case undoLastShape  = "Undo Last Shape"
+    case resetScene     = "Reset Scene"
 }
 
 enum Shape: String {
-    case box = "Box"
-    case sphere = "Sphere"
-    case cylinder = "Cylinder"
-    case cone = "Cone"
-    case pyramid = "Pyramid"
-    case torus = "Torus"
+    case box        = "Box"
+    case sphere     = "Sphere"
+    case cylinder   = "Cylinder"
+    case cone       = "Cone"
+    case pyramid    = "Pyramid"
+    case torus      = "Torus"
 }
 
 enum Size: String {
-    case small = "Small"
-    case medium = "Medium"
-    case large = "Large"
+    case small      = "Small"
+    case medium     = "Medium"
+    case large      = "Large"
     case extraLarge = "Extra Large"
 }

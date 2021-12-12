@@ -1,7 +1,14 @@
+//
+//  ContentView.swift
+//  Reality Glasses 2020
+//
+//  Created by Vladimir Shevtsov on 06.11.2021.
+//
+
 import UIKit
 import SceneKit
 
-protocol OptionsViewControllerDelegate: class {
+protocol OptionsViewControllerDelegate: AnyObject {
     func objectSelected(node: SCNNode)
     func undoLastObject()
     func togglePlaneVisualization()
@@ -98,14 +105,14 @@ class OptionsContainerViewController: UIViewController, UINavigationControllerDe
     
     private func colorPicker() -> UIViewController {
         let colors: [(String, UIColor)] = [
-            ("Red", .red),
-            ("Yellow", .yellow),
-            ("Orange", .orange),
-            ("Green", .green),
-            ("Blue", .blue),
-            ("Cyan", .cyan),
-            ("Brown", .brown),
-            ("White", .white),
+            ("Red",     .red),
+            ("Yellow",  .yellow),
+            ("Orange",  .orange),
+            ("Green",   .green),
+            ("Blue",    .blue),
+            ("Cyan",    .cyan),
+            ("Brown",   .brown),
+            ("White",   .white),
         ]
         let options = colors.map { Option(name: $0.0, option: $0.1, showsDisclosureIndicator: true) }
         

@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  Reality Glasses 2020
+//
+//  Created by Vladimir Shevtsov on 06.11.2021.
+//
+
 import ARKit
 
 class ViewController: UIViewController {

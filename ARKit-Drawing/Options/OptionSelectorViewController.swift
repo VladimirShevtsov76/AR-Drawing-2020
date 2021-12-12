@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  Reality Glasses 2020
+//
+//  Created by Vladimir Shevtsov on 06.11.2021.
+//
+
 import UIKit
 
 struct Option<T> {
@@ -8,7 +15,7 @@ struct Option<T> {
 
 extension Option where T: RawRepresentable, T.RawValue == String {
     init(option: T, showsDisclosureIndicator: Bool = true) {
-        self.name = option.rawValue
+        self.name   = option.rawValue
         self.option = option
         self.showsDisclosureIndicator = showsDisclosureIndicator
     }
@@ -36,9 +43,9 @@ class OptionSelectorViewController<T>: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "Option")
         
-        let option = options[indexPath.row]
+        let option           = options[indexPath.row]
         cell.textLabel?.text = option.name
-        cell.accessoryType = option.showsDisclosureIndicator ? .disclosureIndicator : .none
+        cell.accessoryType   = option.showsDisclosureIndicator ? .disclosureIndicator : .none
         
         return cell
     }

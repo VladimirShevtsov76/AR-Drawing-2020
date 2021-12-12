@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5519DC5720238B6000B1008D /* OptionSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519DC5620238B6000B1008D /* OptionSelectorViewController.swift */; };
+		B189619C2766533C00333DC5 /* Screenshot01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B189619A2766533C00333DC5 /* Screenshot01.jpeg */; };
+		B189619D2766533C00333DC5 /* Screenshot02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B189619B2766533C00333DC5 /* Screenshot02.jpeg */; };
 		BE618F32203E31B8005EC6F1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE618F31203E31B8005EC6F1 /* UIViewController+Extensions.swift */; };
 		BE915EAB20105C1D00A251FD /* OptionsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE915EAA20105C1D00A251FD /* OptionsContainerViewController.swift */; };
 		BEDB2EDA200EABAD001C6BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		5519DC5620238B6000B1008D /* OptionSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectorViewController.swift; sourceTree = "<group>"; };
+		B189619A2766533C00333DC5 /* Screenshot01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot01.jpeg; sourceTree = "<group>"; };
+		B189619B2766533C00333DC5 /* Screenshot02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot02.jpeg; sourceTree = "<group>"; };
 		BE618F31203E31B8005EC6F1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BE915EAA20105C1D00A251FD /* OptionsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsContainerViewController.swift; sourceTree = "<group>"; };
 		BEDB2ED6200EABAD001C6BBC /* ARKit-Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-Drawing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B18961992766531900333DC5 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				B189619A2766533C00333DC5 /* Screenshot01.jpeg */,
+				B189619B2766533C00333DC5 /* Screenshot02.jpeg */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		BEDB2ECD200EABAD001C6BBC = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +79,7 @@
 		BEDB2ED8200EABAD001C6BBC /* ARKit-Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				B18961992766531900333DC5 /* Screenshots */,
 				BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */,
 				BEDB2EDD200EABAD001C6BBC /* ViewController.swift */,
 				BEDB2EEF200ECC4C001C6BBC /* BasicShape.swift */,
@@ -150,10 +164,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B189619D2766533C00333DC5 /* Screenshot02.jpeg in Resources */,
 				BEDB2EDC200EABAD001C6BBC /* models.scnassets in Resources */,
 				BEDB2EEE200ECB94001C6BBC /* Options.storyboard in Resources */,
 				BEDB2EE6200EABAD001C6BBC /* LaunchScreen.storyboard in Resources */,
 				BEDB2EE3200EABAD001C6BBC /* Assets.xcassets in Resources */,
+				B189619C2766533C00333DC5 /* Screenshot01.jpeg in Resources */,
 				BEDB2EE1200EABAD001C6BBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,9 +332,9 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = 9WKHJD3DKV;
 				INFOPLIST_FILE = "ARKit-Drawing/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ARKit-Drawing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,9 +351,9 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = 9WKHJD3DKV;
 				INFOPLIST_FILE = "ARKit-Drawing/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ARKit-Drawing";
 				PRODUCT_NAME = "$(TARGET_NAME)";

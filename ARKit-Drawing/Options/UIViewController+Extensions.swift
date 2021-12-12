@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  Reality Glasses 2020
+//
+//  Created by Vladimir Shevtsov on 06.11.2021.
+//
+
 import UIKit
 
 extension UIViewController {
@@ -5,7 +12,7 @@ extension UIViewController {
     func transition(to child: UIViewController, completion: ((Bool) -> Void)? = nil) {
         let duration = 0.3
         
-        let current = children.last
+        let current  = children.last
         addChild(child)
         
         let newView = child.view!
